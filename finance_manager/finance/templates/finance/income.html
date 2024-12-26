@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Money</title>
+    <style>
+        /* Background Image */
+        body {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #E0EEF3;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            font-family: 'Luxurious Script', cursive;
+            font-size: 48px;
+            line-height: 140%;
+            color: #000000;
+            margin-top: 550px; /* Перемещение логотипа пониже */
+            margin-bottom: 10px;
+        }
+
+        /* Title */
+        h1 {
+            font-family: 'Luxurious Script', cursive;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 140%;
+            color: #000000;
+            margin-top: 50px; /* Отступ сверху */
+        }
+
+        /* Content Style */
+        .content {
+            font-family: 'Bad Script', cursive;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 32px;
+            color: rgba(0, 0, 0, 0.75);
+            margin-bottom: 20px; /* Отступ снизу */
+        }
+
+        /* Subtitle */
+        h2 {
+            font-family: 'Bad Script';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 79px;
+            color: #110435;
+            margin: 20px 0; /* Отступ сверху и снизу */
+        }
+
+        /* Description */
+        p {
+            font-family: 'Bad Script';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: rgba(0, 0, 0, 0.75);
+            margin-bottom: 30px; /* Отступ снизу */
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование элементов внутри контейнера */
+            padding: 20px;
+            margin: 0 auto; /* Центрирование контейнера */
+            width: 600px;
+            background-color: #E0EEF3;
+        }
+
+        /* Input Field */
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0; /* Увеличен вертикальный отступ */
+            width: 100%; /* Занять всю ширину контейнера */
+        }
+
+        input[type="text"] {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px 16px;
+            width: 240px;
+            height: 40px;
+            background: #ECF8FF;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            font-family: 'Inter';
+            font-size: 16px;
+            color: #1E1E1E;
+            margin-left: 10px; /* Добавлен горизонтальный отступ */
+        }
+
+        /* Label */
+        label {
+            width: 240px;
+            height: 22px;
+            font-family: 'Bad Script';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 140%;
+            color: #1E1E1E;
+            text-align: center; /* Центрирование текста в label */
+        }
+
+        /* Button */
+        .button2, .button3 {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            margin-top: 20px;
+            width: 454px;
+            height: 52px;
+            background: #ECF8FF;
+            border: 1px solid #2C2C2C;
+            border-radius: 8px;
+            font-family: 'Bad Script';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 32px;
+            color: #1E1E1E;
+            cursor: pointer;
+        }
+
+        .button2:hover, .button3:hover {
+            background: #D9E6EB;
+        }
+
+        /* Limit Container */
+        .limit-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование элементов внутри контейнера */
+        }
+
+        .limit-container label {
+            margin-bottom: 10px; /* Отступ снизу для label */
+        }
+
+        .limit-container input[type="text"] {
+            margin-bottom: 10px; /* Отступ снизу для input */
+        }
+        /* Center the "Доход" input and "Показать диаграмму" button */
+        .center-input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        /* Увеличение вертикального отступа между кнопкой "Доход" и полем ввода */
+        .center-input label {
+            margin-bottom: 10px; /* Добавлен отступ снизу */
+        }
+    </style>
+</head>
+<body>
+<div class="logo">My Money</div>
+<p class="content">Диаграмма ваших расходов и доходов по категориям</p>
+<!-- Вывод ошибки, если она есть -->
+{% if error %}
+<p style="color: red;">{{ error }}</p>
+{% endif %}
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        <div class="center-input">
+            <label for="Доход">Доход:</label>
+            <input type="text" id="Доход" name="Доход" placeholder="Введите доход">
+        </div>
+        <div class="input-group">
+            <div>
+                <label for="Еда">Еда:</label>
+                <input type="text" id="Еда" name="Еда" placeholder="Введите расходы на кафе">
+            </div>
+            <div>
+                <label for="Транспорт">Транспорт:</label>
+                <input type="text" id="Транспорт" name="Транспорт" placeholder="Введите расходы на транспорт">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div>
+                <label for="Связь">Связь:</label>
+                <input type="text" id="Связь" name="Связь" placeholder="Введите расходы на связь">
+            </div>
+            <div>
+                <label for="Медицина">Медицина:</label>
+                <input type="text" id="Медицина" name="Медицина" placeholder="Введите расходы на медицину">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div>
+                <label for="Красота">Красота:</label>
+                <input type="text" id="Красота" name="Красота" placeholder="Введите расходы на красоту">
+            </div>
+            <div>
+                <label for="Маркетплейсы">Маркетплейсы:</label>
+                <input type="text" id="Маркетплейсы" name="Маркетплейсы" placeholder="Введите расходы на маркетплейсы">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div>
+                <label for="Развлечения">Развлечения:</label>
+                <input type="text" id="Развлечения" name="Развлечения" placeholder="Введите расходы на развлечения">
+            </div>
+            <div>
+                <label for="Кредит">Кредит:</label>
+                <input type="text" id="Кредит" name="Кредит" placeholder="Введите расходы на кредит">
+            </div>
+        </div>
+        <div class="input-group">
+            <div>
+                <label for="Учеба">Учеба:</label>
+                <input type="text" id="Учеба" name="Учеба" placeholder="Введите расходы на образование">
+            </div>
+            <div>
+                <label for="Одежда и обувь">Одежда и обувь:</label>
+                <input type="text" id="Одежда и обувь" name="Одежда и обувь"
+                       placeholder="Введите расходы на одежду и обувь">
+            </div>
+        </div>
+        <div class="center-input">
+            <button class="button2" onclick="window.location.href='{% url 'generate_chart' %}'">Показать диаграмму
+            </button>
+        </div>
+<div class="limit-container">
+    <label for="Лимит на траты">Лимит на траты:</label>
+    <input type="text" id="Лимит на траты" name="limit_amount" placeholder="Введите лимит на траты">
+    <button class="button3" type="submit">Создать лимит</button>
+</div>
+    </form>
+
+</div>
+</div>
+</body>
+</html>

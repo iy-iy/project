@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Диаграмма</title>
+    <style>
+        body {
+            background-color: #E0EEF3;
+            text-align: center; /* Центрирование текста */
+        }
+        .logo {
+            font-family: 'Luxurious Script', cursive;
+            font-size: 48px;
+            line-height: 140%;
+            color: #000000;
+            margin-top: 50px; /* Перемещение логотипа пониже */
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style-type: none; /* Убираем маркеры списка */
+            padding: 0; /* Убираем отступы */
+            text-align: center; /* Центрирование списка */
+        }
+        li {
+            margin-bottom: 10px; /* Увеличиваем расстояние между элементами списка */
+            font-size: 20px; /* Увеличиваем размер шрифта для лучшей читаемости */
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px; /* Увеличиваем размер кнопки */
+            font-size: 24px; /* Увеличиваем размер текста */
+            font-weight: bold; /* Делаем текст жирным */
+            color: #2B2D42;
+            background-color: #ECF8FF;
+            border: none;
+            border-radius: 10px; /* Скругленные углы */
+            text-decoration: none; /* Убираем подчеркивание */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+        }
+        .back-button:hover {
+            background: #D9E6EB;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="logo">Диаграмма доходов и расходов</h1>
+    <img src="data:image/png;base64,{{ graphic }}" alt="Диаграмма">
+    <h2>Детализация расходов:</h2>
+    <ul>
+        {% for category, amount in expense_data.items %}
+            <li>{{ category }}: {{ amount }} руб.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'income' %}" class="back-button">Назад</a>
+</body>
+</html>

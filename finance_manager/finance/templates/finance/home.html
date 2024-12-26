@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Money</title>
+    <style>
+        body {
+            background-color: #E0EEF3;
+            font-family: 'Crimson Text', serif;
+            color: #2B2D42;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .logo {
+            font-family: 'Luxurious Script', cursive;
+            font-size: 48px;
+            line-height: 140%;
+            color: #000000;
+            margin-top: -50px; /* Перемещение логотипа пониже */
+            margin-bottom: 40px;
+        }
+
+        .content {
+            font-family: 'Bad Script', cursive;
+            font-style: italic;
+            font-size: 30px;
+            line-height: 59px;
+            color: #110435;
+            margin: 20px;
+            max-width: 1500px; /* Увеличение длины строк текста */
+        }
+        .button {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            gap: 8px;
+            width: 183px;
+            height: 55px;
+            background: #ECF8FF;
+            border: 1px solid #2C2C2C;
+            border-radius: 10px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            cursor: pointer;
+            font-size: 1.2em;
+            color: #2B2D42;
+        }
+                .button:hover {
+            background: #D9E6EB;
+        }
+    </style>
+</head>
+<body>
+<div class="logo">My money</div>
+<div class="content">
+    <p>Добро пожаловать на сайт. Этот сайт поможет вам:</p>
+    <ul>
+        <li>Записать ваш доход</li>
+        <li>Узнать ваши расходы</li>
+        <li>Посмотреть диаграмму ваших расходов и доходов по категориям</li>
+        <li>Сделать лимит на траты</li>
+    </ul>
+</div>
+<button class="button" onclick="window.location.href='{% url 'login' %}'">Продолжить</button>
+</body>
+</html>

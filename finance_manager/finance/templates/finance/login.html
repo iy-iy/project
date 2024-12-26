@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Money</title>
+    <style>
+        body {
+            background-color: #E0EEF3;
+            font-family: 'Crimson Text', serif;
+            color: #2B2D42;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .logo {
+            font-family: 'Luxurious Script', cursive;
+            font-size: 48px;
+            line-height: 140%;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .login-prompt, .register-prompt {
+            font-family: 'Bad Script', cursive;
+            font-style: italic;
+            font-size: 30px;
+            line-height: 59px;
+            color: #110435;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .form-register {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px;
+            gap: 24px;
+            width: 400px; /* Увеличена ширина формы */
+            background: rgba(236, 248, 255, 0.972549);
+            border: 1px solid #000000;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 8px;
+            width: 80%; /* Уменьшена ширина полей ввода */
+        }
+
+        .label {
+            width: 100%;
+            height: 22px;
+            font-family: 'Bad Script';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #1E1E1E;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px 16px;
+            width: 100%;
+            height: 40px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            border-radius: 8px;
+        }
+
+        .button1, .button2 {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            gap: 8px;
+            width: 220px;
+            height: 75px;
+            background: #ECF8FF;
+            border: 1px solid #2C2C2C;
+            border-radius: 8px;
+            font-family: 'Bad Script';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 100%;
+            color: #1E1E1E;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        .button1:hover, .button2:hover {
+            background: #D9E6EB;
+        }
+
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">My money</div>
+    <div class="login-prompt">Если у вас уже есть аккаунт, то войдите в него</div>
+    <form class="form-register" method="post">
+        {% csrf_token %}
+        <div class="input-field">
+            <label class="label">Логин</label>
+            <input class="input" type="text" name="username" placeholder="Введите логин">
+        </div>
+        <div class="input-field">
+            <label class="label">Пароль</label>
+            <input class="input" type="password" name="password" placeholder="Введите пароль">
+        </div>
+        <button class="button2" type="submit">Войти</button>
+        {% if error %}
+            <p class="error-message">{{ error }}</p>
+        {% endif %}
+    </form>
+    <div class="register-prompt">Если у вас нет аккаунта, то нажмите зарегистрироваться</div>
+    <button class="button1" onclick="window.location.href='{% url 'register' %}'">Зарегистрироваться</button>
+</body>
+</html>
+
