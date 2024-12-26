@@ -1,0 +1,909 @@
+/* Mask group */
+
+position: relative;
+width: 791px;
+height: 574px;
+
+
+
+/* image 1 */
+
+position: absolute;
+width: 791px;
+height: 574px;
+left: 0px;
+top: 0px;
+
+background: url(image.png);
+
+
+/* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px;
+gap: 8px;
+
+position: relative;
+width: 183px;
+height: 55px;
+left: 304px;
+top: 488px;
+
+background: #ECF8FF;
+border: 1px solid #2C2C2C;
+border-radius: 8px;
+
+
+/* Star
+
+Keywords: bookmark, favorite, like
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button */
+
+width: 117px;
+height: 16px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+
+color: #1E1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* X
+
+Keywords: cancel, close, delete, remove, times, clear
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Если у вас нету акаунты, то нажмите зарегистрироваться */
+
+position: absolute;
+width: 343px;
+height: 22px;
+left: 224px;
+top: 450px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #000000;
+
+
+
+/* My money */
+
+position: absolute;
+width: 155px;
+height: 57px;
+left: 318px;
+top: 29px;
+
+font-family: 'Luxurious Script';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 140%;
+/* or 67px */
+
+color: #000000;
+
+
+
+/* Если у вас уже есть аккаунт, то войдите в него */
+
+position: absolute;
+width: 280px;
+height: 22px;
+left: 39px;
+top: 124px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #000000;
+
+
+
+/* Form Register */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 24px;
+
+position: relative;
+width: 320px;
+min-width: 320px;
+height: 276px;
+left: 39px;
+top: 158px;
+
+background: rgba(236, 248, 255, 0.972549);
+border: 1px solid #000000;
+border-radius: 8px;
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 272px;
+height: 70px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 272px;
+height: 22px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #1E1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Description */
+
+display: none;
+width: 240px;
+height: 22px;
+
+/* Body Base */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #757575;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Input */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+
+width: 272px;
+min-width: 240px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Value */
+
+width: 240px;
+height: 16px;
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Error */
+
+display: none;
+width: 37px;
+height: 22px;
+
+/* Body Base */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #1E1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 272px;
+height: 70px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 272px;
+height: 22px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #1E1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Description */
+
+display: none;
+width: 240px;
+height: 22px;
+
+/* Body Base */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #757575;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Input */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+
+width: 272px;
+min-width: 240px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Value */
+
+width: 240px;
+height: 16px;
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Error */
+
+display: none;
+width: 37px;
+height: 22px;
+
+/* Body Base */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #1E1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Checkbox Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+display: none;
+width: 272px;
+height: 44px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Button Group
+
+Keywords: actions
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 272px;
+height: 40px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px;
+gap: 8px;
+
+display: none;
+width: 112px;
+height: 40px;
+
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px;
+gap: 8px;
+
+width: 272px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Star
+
+Keywords: bookmark, favorite, like
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button */
+
+width: 35px;
+height: 16px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* X
+
+Keywords: cancel, close, delete, remove, times, clear
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Form Forgot Password */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 24px;
+
+position: relative;
+width: 320px;
+min-width: 320px;
+height: 182px;
+left: 407px;
+top: 205px;
+
+background: #ECF8FF;
+border: 1px solid #000000;
+border-radius: 8px;
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 272px;
+height: 70px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 272px;
+height: 22px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #1E1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Description */
+
+display: none;
+width: 240px;
+height: 22px;
+
+/* Body Base */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #757575;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Input */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+
+width: 272px;
+min-width: 240px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Value */
+
+width: 240px;
+height: 16px;
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Error */
+
+display: none;
+width: 37px;
+height: 22px;
+
+/* Body Base */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #1E1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Button Group
+
+Keywords: actions
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 272px;
+height: 40px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px;
+gap: 8px;
+
+width: 69px;
+height: 40px;
+
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Star
+
+Keywords: bookmark, favorite, like
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button */
+
+width: 45px;
+height: 16px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* X
+
+Keywords: cancel, close, delete, remove, times, clear
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px;
+gap: 8px;
+
+width: 122px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Star
+
+Keywords: bookmark, favorite, like
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button */
+
+width: 98px;
+height: 16px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* X
+
+Keywords: cancel, close, delete, remove, times, clear
+*/
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Если вы забыли пароль, то сбросте его */
+
+position: absolute;
+width: 232px;
+height: 22px;
+left: 407px;
+top: 129px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #000000;
+

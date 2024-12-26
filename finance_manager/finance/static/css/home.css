@@ -1,0 +1,97 @@
+/* Frame 1 */
+.frame-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    position: relative;
+    width: 203px;
+    height: 75px;
+}
+
+/* Добро пожаловать на сайт. Этот сайт поможет вам Записать ваш доход Узнать ваши расходы Посмотреть диаграмму ваших расходов и доходов по категориям Сделать лимит на траты */
+.welcome-text {
+    position: absolute;
+    width: 759px;
+    height: 295px;
+    font-family: 'Bad Script', cursive;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px; /* Увеличенный размер шрифта */
+    line-height: 59px;
+    color: #110435;
+    border: 1px solid red; /* Визуальный индикатор */
+}
+
+.welcome-text p {
+    font-size: 40px; /* Увеличенный размер шрифта для абзацев */
+}
+
+.welcome-text ul,
+.welcome-text li {
+    font-size: 30px; /* Увеличенный размер шрифта для списков и элементов списка */
+}
+
+/* My money */
+.my-money {
+    position: absolute;
+    width: 126px;
+    height: 67px;
+    font-family: 'Luxurious Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 140%; /* or 67px */
+    color: #000000;
+}
+
+/* Stack Of Money */
+.stack-of-money {
+    position: relative;
+    width: 30px;
+    height: 35px;
+}
+
+/* Button */
+.button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    position: relative;
+    width: 183px;
+    height: 55px;
+    background: #C9E9F4;
+    border: 1px solid #2C2C2C;
+    border-radius: 8px;
+}
+
+/* Frame 2 */
+.frame-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    position: relative;
+    width: 203px;
+    height: 75px;
+}
+
+/* Stack Of Money */
+.stack-of-money-2 {
+    position: relative;
+    width: 30px;
+    height: 35px;
+}
+
+/* stack-of-money-1--finance-banknote-stack-of-money */
+.stack-of-money-icon {
+    position: absolute;
+    width: 28.55px;
+    height: 28.08px;
+}

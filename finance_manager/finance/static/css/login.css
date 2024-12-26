@@ -1,0 +1,101 @@
+/* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px;
+gap: 8px;
+
+position: relative;
+width: 183px;
+height: 55px;
+left: 304px;
+top: 488px;
+
+background: #ECF8FF;
+border: 1px solid #2C2C2C;
+border-radius: 8px;
+
+
+/* Если у вас нет акаунта, то нажмите зарегистрироваться */
+
+position: absolute;
+width: 334px;
+height: 22px;
+left: 224px;
+top: 450px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #000000;
+
+
+
+/* My money */
+
+position: absolute;
+width: 155px;
+height: 57px;
+left: 318px;
+top: 29px;
+
+font-family: 'Luxurious Script';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 140%;
+/* or 67px */
+
+color: #000000;
+
+
+
+/* Если у вас уже есть аккаунт, то войдите в него */
+
+position: absolute;
+width: 280px;
+height: 22px;
+left: 236px;
+top: 124px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #000000;
+
+
+
+/* Form Register */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 24px;
+
+position: relative;
+width: 320px;
+min-width: 320px;
+height: 276px;
+left: 236px;
+top: 158px;
+
+background: rgba(236, 248, 255, 0.972549);
+border: 1px solid #000000;
+border-radius: 8px;

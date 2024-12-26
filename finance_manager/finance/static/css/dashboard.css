@@ -1,0 +1,339 @@
+/* image 1 */
+
+position: absolute;
+width: 958px;
+height: 1512px;
+
+background: url(image.png);
+
+
+/* Если по одному из пунктов расходы отсутствуют, указывайте ноль */
+
+position: absolute;
+width: 399px;
+height: 64px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+
+color: rgba(0, 0, 0, 0.75);
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Диаграмма ваших расходов и доходов по категориям */
+
+position: absolute;
+width: 805px;
+height: 79px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 40px;
+line-height: 79px;
+/* identical to box height */
+
+color: #110435;
+
+
+
+/* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px;
+gap: 8px;
+
+position: relative;
+width: 454px;
+height: 52px;
+
+background: #ECF8FF;
+border: 1px solid #2C2C2C;
+border-radius: 8px;
+
+
+/* My money */
+
+position: absolute;
+width: 126px;
+height: 67px;
+
+font-family: 'Luxurious Script';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 140%;
+/* or 67px */
+
+color: #000000;
+
+
+
+/* Лимит на траты */
+
+position: absolute;
+width: 187px;
+height: 59px;
+
+font-family: 'Bad Script';
+font-style: italic;
+font-weight: 400;
+font-size: 30px;
+line-height: 59px;
+
+color: #110435;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 406px;
+height: 64px;
+
+
+
+/* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px;
+gap: 8px;
+
+position: relative;
+width: 202px;
+height: 40px;
+
+background: #ECF8FF;
+border: 1px solid #2C2C2C;
+border-radius: 8px;
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
+
+
+
+/* Input Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: relative;
+width: 240px;
+height: 73px;
